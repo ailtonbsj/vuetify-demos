@@ -37,7 +37,9 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Vuetify demo</v-toolbar-title>
     </v-app-bar>
-    <v-main> </v-main>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </v-app>
 </template>
 
