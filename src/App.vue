@@ -19,17 +19,17 @@
       </v-list>
       <v-divider></v-divider>
       <v-list nav dense>
-        <v-list-item link>
+        <v-list-item link to="/">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Home</v-list-item-title>
+          <v-list-item-title>Datatable</v-list-item-title>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/datatable-crud">
           <v-list-item-icon>
             <v-icon>mdi-information-outline</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>About</v-list-item-title>
+          <v-list-item-title>Datatable CRUD</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -47,7 +47,7 @@
 export default {
   data () {
     return {
-      drawer: null
+      drawer: false
     }
   }
 }

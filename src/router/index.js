@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DataTable from '../views/DataTable'
+import DataTableCRUD from '../views/DataTableCRUD'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: DataTable
+  },
+  {
+    path: '/datatable-crud',
+    name: 'DataTableCRUD',
+    component: DataTableCRUD
   }
   // {
   //   path: '/about',
