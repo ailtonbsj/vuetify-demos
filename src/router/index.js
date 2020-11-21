@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DataTable from '../views/DataTable'
 import DataTableCRUD from '../views/DataTableCRUD'
+import FormValidation from '../views/FormValidation'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/datatable-crud',
     name: 'DataTableCRUD',
     component: DataTableCRUD
+  },
+  {
+    path: '/form-validation',
+    name: 'FormValidation',
+    component: FormValidation
   }
   // {
   //   path: '/about',

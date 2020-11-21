@@ -5,7 +5,7 @@
         <v-list-item class="px-2">
           <v-list-item-avatar size="64">
             <v-img
-              src="https://randomuser.me/api/portraits/women/10.jpg"
+              src="https://randomuser.me/api/portraits/women/3.jpg"
             ></v-img>
           </v-list-item-avatar>
         </v-list-item>
@@ -30,6 +30,12 @@
             <v-icon>mdi-information-outline</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Datatable CRUD</v-list-item-title>
+        </v-list-item>
+        <v-list-item link to="/form-validation">
+          <v-list-item-icon>
+            <v-icon>mdi-form-select</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Form Validation</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
