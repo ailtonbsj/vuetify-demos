@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import DataTable from '../views/DataTable'
 import DataTableCRUD from '../views/DataTableCRUD'
 import FormValidation from '../views/FormValidation'
+import FlexLayout from '../views/FlexLayout'
+import GridSystem from '../views/GridSystem'
 
 Vue.use(VueRouter)
 
@@ -10,17 +12,32 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: DataTable
+    component: DataTable,
+    icon: 'mdi-home-outline'
   },
   {
     path: '/datatable-crud',
-    name: 'DataTableCRUD',
-    component: DataTableCRUD
+    name: 'Data Table CRUD',
+    component: DataTableCRUD,
+    icon: 'mdi-information-outline'
   },
   {
     path: '/form-validation',
-    name: 'FormValidation',
-    component: FormValidation
+    name: 'Form Validation',
+    component: FormValidation,
+    icon: 'mdi-form-select'
+  },
+  {
+    path: '/flex-layout',
+    name: 'Flex Layout',
+    component: FlexLayout,
+    icon: 'mdi-page-layout-header-footer'
+  },
+  {
+    path: '/grid-system',
+    name: 'Grid System',
+    component: GridSystem,
+    icon: 'mdi-grid'
   }
   // {
   //   path: '/about',

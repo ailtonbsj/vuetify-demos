@@ -19,23 +19,11 @@
       </v-list>
       <v-divider></v-divider>
       <v-list nav dense>
-        <v-list-item link to="/">
+        <v-list-item v-for="route in routes" link :to="route.path" :key="route.name">
           <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
+            <v-icon>{{ route.icon }}</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Datatable</v-list-item-title>
-        </v-list-item>
-        <v-list-item link to="/datatable-crud">
-          <v-list-item-icon>
-            <v-icon>mdi-information-outline</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Datatable CRUD</v-list-item-title>
-        </v-list-item>
-        <v-list-item link to="/form-validation">
-          <v-list-item-icon>
-            <v-icon>mdi-form-select</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Form Validation</v-list-item-title>
+          <v-list-item-title>{{ route.name }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -53,8 +41,16 @@
 export default {
   data () {
     return {
-      drawer: false
+      drawer: false,
+      routes: []
     }
+  },
+  created () {
+    this.routes = this.$router.options.routes.map(route => ({
+      name: route.name,
+      path: route.path,
+      icon: route.icon
+    }))
   }
 }
 </script>
